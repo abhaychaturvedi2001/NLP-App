@@ -1,1 +1,27 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NLP APP  | Login page</title>
+</head>
+<body>
+       <h1> NLP APP</h1>
+       <h3> login here</h3>
+       {% if massage %}
+       <p style="color:green">{{massage}}</p>
+       {%endif%}
+
+<form action = "/perform_login", method = "post">
+
+    <label>email</label><br>
+    <input type="email" name = "useremail"><br>
+    <label>password</label><br>
+    <input type="password" name = "userpassword"><br><br>
+    <input type ="submit" value ="login"><br>
+
+
+</form>
+<p> not a member ?<a href = "/register">register here</a></p>
+</body>
+</html>
